@@ -12,10 +12,13 @@ const Collapse = () => {
       className={`collapse ${isCollapsed ? "collapse-close" : "collapse-open"}`}
       onClick={toggleCollapseOne}
     >
+      {/* TODO: Collapse only on title / Icon */}
       <input type="checkbox" className="w-full" />
       <div className="collapse-title w-full px-0">
         <div className="flex flex-row justify-between items-center w-full">
-          <p className="text-xs font-medium text-[#90A3A7]">Assigned By You</p>
+          <p className="text-xs font-medium text-[#90A3A7] font-poppins">
+            Assigned By You
+          </p>
           <button className="btn btn-ghost btn-square btn-sm border border-[#FAFAFA] rounded-xl">
             {isCollapsed ? (
               <ChevronUp

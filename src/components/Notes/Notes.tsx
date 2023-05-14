@@ -1,12 +1,14 @@
 import Collapse from "../Collapse/Collapse";
 import CollapseSecond from "../Collapse/CollapseSecond";
+import MiddleColumn from "../SecondColumn/MiddleColumn";
+import ThirdColumn from "../ThirdColumn/ThirdColumn";
 import Button from "../ui/Button";
 import { Search } from "lucide-react";
 const Notes = () => {
   return (
-    <div className="flex flex-row py-2 px-0 my-2 mx-8 rounded-lg bg-white">
+    <div className="flex flex-row px-0 mt-2 mx-8 rounded-lg bg-white">
       {/* Column One */}
-      <div className="py-2 px-2 flex flex-col w-1/4 justify-center">
+      <div className="py-3 px-2 flex flex-col w-1/4">
         <div className="flex flex-row justify-between items-center">
           <h3 className="text-[#1A3A5F] font-light font-mulish text-xl leading-6">
             Client List
@@ -31,6 +33,10 @@ const Notes = () => {
         <Collapse />
         <CollapseSecond />
       </div>
+      {/* Column two */}
+      <MiddleColumn />
+      {/* Column Three */}
+      <ThirdColumn />
     </div>
   );
 };

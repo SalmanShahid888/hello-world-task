@@ -3,7 +3,7 @@ import Notes from "./components/Notes/Notes";
 
 function App() {
   return (
-    <div className="bg-[#FAFAFA] min-h-screen">
+    <div className="bg-[#FAFAFA] min-h-screen overflow-x-hidden">
       <Header />
       <Notes />
     </div>
