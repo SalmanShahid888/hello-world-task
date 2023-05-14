@@ -16,8 +16,7 @@ const ThirdColumn = () => {
         <div className="flex flex-row gap-2 items-center">
           <Button variant={"success"}> Message </Button>
           <Button variant={"primary"} size={"lg"}>
-            {" "}
-            Schedule a Session{" "}
+            Schedule a Session
           </Button>
         </div>
       </div>
