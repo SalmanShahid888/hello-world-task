@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish&family=Nunito&family=Plus+Jakarta+Sans:ital@1&family=Poppins&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* If the user prefers light mode, 
+we of course apply color-scheme: light, as usual */
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: light;
+  }
+}
+
+/* If the user prefers dark mode, 
+we still enforce color-scheme: light, despite the user preference */
+@media (prefers-color-scheme: light) {
+  html {
+    color-scheme: light;
+  }
+}
