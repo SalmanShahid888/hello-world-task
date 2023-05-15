@@ -8,6 +8,17 @@ const Login = () => {
   const [Password, setPassword] = useState<string>("");
   const [EmailError, setEmailError] = useState<string | string[]>("");
   const [PasswordError, setPasswordError] = useState<string | string[]>("");
+
+  const handleSubmit = () => {
+    navigate("/home");
+    if (Email === "") {
+      setEmailError("Email is required");
+    }
+    if (Password === "") {
+      setPasswordError("Password is required");
+    }
+  };
+
   return (
     <div className="min-h-screen min-w-full bg-[#FAFAFA] flex justify-center items-center">
       <div className="flex flex-col justify-center items-center bg-white shadow-md min-h-[40%] min-w-[35%] rounded-lg py-5">
@@ -28,7 +39,7 @@ const Login = () => {
             }}
           />
           <label className="label">
-            <span className="label-text-alt text-red-300">{EmailError[0]}</span>
+            <span className="label-text-alt text-red-300">{EmailError}</span>
           </label>
         </div>
         <div className="form-control w-full max-w-xs my-4">
@@ -45,16 +56,14 @@ const Login = () => {
             }}
           />
           <label className="label">
-            <span className="label-text-alt text-red-300">
-              {PasswordError[0]}
-            </span>
+            <span className="label-text-alt text-red-300">{PasswordError}</span>
           </label>
         </div>
         <Button
           variant={"primary"}
           size={"lg"}
           className="w-[40%] m-5 px-5"
-          onClick={() => navigate("/")}
+          onClick={handleSubmit}
         >
           Login
         </Button>
