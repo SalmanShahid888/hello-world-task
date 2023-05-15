@@ -1,12 +1,15 @@
-import Header from "./components/Header/Header";
+import Login from "./components/LoginScreen/Login";
 import Notes from "./components/Notes/Notes";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <div className="bg-[#FAFAFA] min-h-screen overflow-x-hidden">
-      <Header />
-      <Notes />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/login" element={<Login />} />
+        <Route path="/" element={<Notes />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
