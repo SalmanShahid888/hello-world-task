@@ -8,11 +8,6 @@ const Login = () => {
   const [Password, setPassword] = useState<string>("");
   const [EmailError, setEmailError] = useState<string | string[]>("");
   const [PasswordError, setPasswordError] = useState<string | string[]>("");
-
-  const handleSubmit = () => {
-    navigate("/");
-  };
-
   return (
     <div className="min-h-screen min-w-full bg-[#FAFAFA] flex justify-center items-center">
       <div className="flex flex-col justify-center items-center bg-white shadow-md min-h-[40%] min-w-[35%] rounded-lg py-5">
