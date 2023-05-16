@@ -1,8 +1,17 @@
 import { ChevronDown } from "lucide-react";
 import CollapseThird from "../Collapse/CollapseThird";
 import Button from "../ui/Button";
+import { useState } from "react";
+import Modal from "../Modal/Modal";
+import card from "../../assets/ModalImages/Card.png";
+import cardOne from "../../assets/ModalImages/Card1.png";
+import cardtwo from "../../assets/ModalImages/Card2.png";
+import cardthree from "../../assets/ModalImages/Card3.png";
+import cardfour from "../../assets/ModalImages/Card6.png";
+import cardfive from "../../assets/ModalImages/Card5.png";
 
 const MiddleColumn = () => {
+  const [isModalOpen, setisModalOpen] = useState<boolean>(false);
   return (
     <>
       <div className="px-[2px] pb-2 flex flex-col w-1/4 bg-[#FAFAFA]">
@@ -38,10 +47,38 @@ const MiddleColumn = () => {
         {/* Collapse */}
         <CollapseThird />
         <div className="flex flex-1"></div>
-        <Button className="mx-3" variant={"primary"} size={"lg"}>
+        <Button
+          className="mx-3"
+          variant={"primary"}
+          size={"lg"}
+          onClick={() => setisModalOpen(true)}
+        >
           Assign a Journal
         </Button>
       </div>
+      {isModalOpen && (
+        <Modal
+          isOpen={isModalOpen}
+          handleClose={() => {
+            setisModalOpen(!isModalOpen);
+          }}
+        >
+          <div className="px-2 flex flex-col gap-5 flex-1">
+            <div className="flex flex-row justify-between flex-wrap gap-2">
+              <img src={card} alt="" className="w-[48%]" />
+              <img src={cardOne} alt="" className="w-[48%]" />
+            </div>
+            <div className="flex flex-row justify-between flex-wrap gap-3">
+              <img src={cardtwo} alt="" className="w-[48%]" />
+              <img src={cardthree} alt="" className="w-[48%]" />
+            </div>
+            <div className="flex flex-row justify-between flex-wrap gap-3">
+              <img src={cardfour} alt="" className="w-[48%]" />
+              <img src={cardfive} alt="" className="w-[48%]" />
+            </div>
+          </div>
+        </Modal>
+      )}
     </>
   );
 };
