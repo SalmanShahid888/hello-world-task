@@ -6,10 +6,10 @@ const ThirdColumn = () => {
     <div className="flex flex-col flex-1">
       <div className="flex flex-row justify-between items-center px-2 py-3">
         <div className="flex flex-row gap-2 items-center">
-          <button className="btn btn-ghost btn-square btn-md border rounded-md bg-[#FAFAFA]">
+          <button className="btn btn-ghost btn-square border rounded-md bg-[#FAFAFA] btn-sm sm:btn-md">
             <ChevronLeft className="text-black" />
           </button>
-          <h3 className="text-[#1A3A5F] font-light font-mulish text-xl leading-6">
+          <h3 className="text-[#1A3A5F] font-light font-mulish leading-6 text-base sm:text-xl">
             Morning Journal Entry
           </h3>
         </div>

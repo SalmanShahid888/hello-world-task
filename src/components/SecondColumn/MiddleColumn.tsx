@@ -14,7 +14,7 @@ const MiddleColumn = () => {
   const [isModalOpen, setisModalOpen] = useState<boolean>(false);
   return (
     <>
-      <div className="px-[2px] pb-2 flex flex-col w-1/4 bg-[#FAFAFA]">
+      <div className="sm:px-[2px] sm:mt-0 mt-4 pb-2 flex flex-col w-full bg-[#FAFAFA] lg:w-1/4">
         <div className="flex flex-col bg-white py-3 px-3">
           <h3 className="text-[#1A3A5F] font-light font-mulish text-xl leading-6">
             Journals

@@ -21,9 +21,9 @@ const Notes = () => {
     <>
       <div className="bg-[#FAFAFA] min-h-screen overflow-x-hidden">
         <Header />
-        <div className="flex flex-row px-0 mt-2 mx-8 rounded-lg bg-white">
+        <div className="flex flex-col px-0 mt-2 mx-8 rounded-lg bg-white lg:flex-row">
           {/* Column One */}
-          <div className="py-3 px-2 flex flex-col w-1/4">
+          <div className="py-3 px-2 flex flex-col w-full lg:w-1/4">
             <div className="flex flex-row justify-between items-center">
               <h3 className="text-[#1A3A5F] font-light font-mulish text-xl leading-6">
                 Client List
