@@ -7,7 +7,7 @@ import toolIcons from "../../assets/Icons/dashboard-icons/tools.svg";
 import blogIcon from "../../assets/Icons/dashboard-icons/blogg.svg";
 import bellIcon from "../../assets/Icons/dashboard-icons/bell.svg";
 import evelopeIcon from "../../assets/Icons/dashboard-icons/envelope.svg";
-import YellowFile from "../../assets/Icons/dashboard-icons/yellowFile.svg";
+import YellowFile from "../../assets/Icons/dashboard-icons/YellowFile.svg";
 import { ChevronDown } from "lucide-react";
 import { MenuSquare } from "lucide-react";
 const Header = () => {
