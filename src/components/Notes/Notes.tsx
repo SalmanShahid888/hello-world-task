@@ -68,16 +68,40 @@ const Notes = () => {
             >
               <div className="px-2 flex flex-col gap-5 flex-1">
                 <div className="flex flex-row justify-between flex-wrap gap-2">
-                  <img src={card} alt="" className="w-[48%]" />
-                  <img src={cardOne} alt="" className="w-[48%]" />
+                  <img
+                    src={card}
+                    alt=""
+                    className="md:w-[48%] 2xl:w-[45%] w-[30vw]"
+                  />
+                  <img
+                    src={cardOne}
+                    alt=""
+                    className="md:w-[48%] 2xl:w-[45%] w-[30vw]"
+                  />
                 </div>
                 <div className="flex flex-row justify-between flex-wrap gap-3">
-                  <img src={cardtwo} alt="" className="w-[48%]" />
-                  <img src={cardthree} alt="" className="w-[48%]" />
+                  <img
+                    src={cardtwo}
+                    alt=""
+                    className="md:w-[48%] 2xl:w-[45%] w-[30vw]"
+                  />
+                  <img
+                    src={cardthree}
+                    alt=""
+                    className="md:w-[48%] 2xl:w-[45%] w-[30vw]"
+                  />
                 </div>
                 <div className="flex flex-row justify-between flex-wrap gap-3">
-                  <img src={cardfour} alt="" className="w-[48%]" />
-                  <img src={cardfive} alt="" className="w-[48%]" />
+                  <img
+                    src={cardfour}
+                    alt=""
+                    className="md:w-[48%] 2xl:w-[45%] w-[30vw]"
+                  />
+                  <img
+                    src={cardfive}
+                    alt=""
+                    className="md:w-[48%] 2xl:w-[45%] w-[30vw]"
+                  />
                 </div>
               </div>
             </Modal>

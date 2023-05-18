@@ -34,7 +34,7 @@ const Modal: FC<ModalProps> = (props) => {
     <ReactPortal wrapperId="react-portal-modal-container">
       <>
         <div className="fixed top-0 left-0 w-screen h-screen z-40 bg-neutral-800 opacity-50" />
-        <div className="fixed rounded-3xl flex flex-col gap-4 box-border w-[45vw] h-[90vh] px-5 py-8 bg-white inset-y-10 inset-x-96 z-50">
+        <div className="fixed rounded-3xl flex flex-col gap-4 box-border sm:w-[45vw] sm:h-[90vh] px-5 py-8 bg-white sm:inset-y-10 sm:inset-x-96 md:inset-x-64 inset-y-20 inset-x-10 2xl:inset-x-1/4 h-[50vh] w-[80vw] z-50 ">
           <div className="flex flex-row justify-between items-center">
             <h3 className="text-[#1A3A5F] font-light font-mulish text-xl leading-6">
               Assign a Journal

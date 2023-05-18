@@ -31,14 +31,14 @@ const ThirdColumn = () => {
             Brandy Fadel IV
           </h3>
           <div className="flex flex-row items-center gap-2">
-            <p className="text-[#1A3A5F] font-semibold font-mulish text-sm leading-6">
+            <p className="text-[#1A3A5F] font-semibold font-mulish sm:text-sm text-[8px] leading-6">
               Daily Journal
             </p>
             <div className="h-2 w-2 bg-[#1A3A5F] rounded-full"></div>
-            <p className="text-[#90A3A7] font-mulish text-sm leading-6">
+            <p className="text-[#90A3A7] font-mulish sm:text-sm text-[8px] leading-6">
               Assigned on -
             </p>
-            <p className="text-[#1A3A5F] font-mulish text-sm leading-6">
+            <p className="text-[#1A3A5F] font-mulish sm:text-sm text-[8px] leading-6">
               6 July 2022 @ 3:00 PM
             </p>
           </div>
